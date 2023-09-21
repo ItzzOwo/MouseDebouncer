@@ -123,13 +123,18 @@ int main() {
     std::cout << "Enter Left Debounce (Milliseconds): ";
     while (!(std::cin >> leftDebounceTime)) {
         std::cin.clear();
-        std::cout << "Invalid input. Please enter an integer: ";
+        system("cls");
+        std::cout << "Invalid input. Please enter an integer!";
+        RestartProgram();
+        
     }
 
     std::cout << "Enter Right Debounce (Milliseconds): ";
     while (!(std::cin >> rightDebounceTime)) {
         std::cin.clear();
-        std::cout << "Invalid input. Please enter an integer: ";
+        system("cls");
+        std::cout << "Invalid input. Please enter an integer!";
+        RestartProgram();
     }
 
     HWND consoleWindow = GetConsoleWindow();
@@ -162,4 +167,4 @@ int main() {
 
     return 0;
 }
-// by itzowo :D
+// made by itzowo :D
